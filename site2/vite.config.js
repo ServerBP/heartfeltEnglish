@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { defineConfig } from "vite";
 import { sveltekit } from "@sveltejs/kit/vite";
 
@@ -28,5 +29,16 @@ export default defineConfig(async () => ({
       // 3. tell vite to ignore watching `src-tauri`
       ignored: ["**/src-tauri/**"],
     },
+    fs: {
+      allow: ["./", "../", "../../"]
+    },
+    optimizeDeps: { exclude: ["fsevents"] },
+  },
+  build: {
+    outDir: 'dist'  // Ensure this points to the correct directory
+  },
+  preview: {
+    port: 4173,
+    host: true, // This is important for Docker
   },
 }));
