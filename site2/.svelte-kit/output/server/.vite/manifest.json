@@ -1,0 +1,236 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_Navbar.js": {
+    "file": "chunks/Navbar.js",
+    "name": "Navbar",
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Navbar.KpCzoXIL.css"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "name": "ssr"
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "name": "stores",
+    "imports": [
+      "_ssr.js",
+      "_exports.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/layout.svelte": {
+    "file": "entries/fallbacks/layout.svelte.js",
+    "name": "entries/fallbacks/layout.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_exports.js",
+      "_ssr.js"
+    ]
+  },
+  "src/lib/texts/test.json": {
+    "file": "chunks/test.js",
+    "name": "test",
+    "src": "src/lib/texts/test.json",
+    "isDynamicEntry": true
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "name": "entries/pages/_layout.ts",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_Navbar.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.D6xgXjp3.css"
+    ]
+  },
+  "src/routes/events/[eventid]/+page.svelte": {
+    "file": "entries/pages/events/_eventid_/_page.svelte.js",
+    "name": "entries/pages/events/_eventid_/_page.svelte",
+    "src": "src/routes/events/[eventid]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_Navbar.js"
+    ],
+    "dynamicImports": [
+      "src/lib/texts/test.json"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DHdDP--J.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/1.5_k37vG8.jpg",
+      "_app/immutable/assets/13.BWMH3uSG.jpg",
+      "_app/immutable/assets/14.DH4jEhqI.jpg",
+      "_app/immutable/assets/15.VTRTsp18.jpg",
+      "_app/immutable/assets/16.C2wsf9O2.jpg",
+      "_app/immutable/assets/18.rCzbzzor.jpg",
+      "_app/immutable/assets/19.D8LjnyOB.jpg",
+      "_app/immutable/assets/2.BjjptTqG.jpg",
+      "_app/immutable/assets/3.Cg5C-Hdd.jpg",
+      "_app/immutable/assets/WhatsApp Image 2024-07-04 at 16.04.12_710d6565.Dta4k68K.jpg",
+      "_app/immutable/assets/WhatsApp Image 2024-07-04 at 16.04.12_7f47fb47.xljAkgzc.jpg",
+      "_app/immutable/assets/banner.BPcTboa5.png"
+    ]
+  },
+  "src/routes/events/[eventid]/+page.ts": {
+    "file": "entries/pages/events/_eventid_/_page.ts.js",
+    "name": "entries/pages/events/_eventid_/_page.ts",
+    "src": "src/routes/events/[eventid]/+page.ts",
+    "isEntry": true
+  },
+  "static/backgroundAssets/1.jpg": {
+    "file": "_app/immutable/assets/1.5_k37vG8.jpg",
+    "src": "static/events/test/1.jpg"
+  },
+  "static/backgroundAssets/12.jpg": {
+    "file": "_app/immutable/assets/1.5_k37vG8.jpg",
+    "src": "static/events/test/1.jpg"
+  },
+  "static/backgroundAssets/13.jpg": {
+    "file": "_app/immutable/assets/13.BWMH3uSG.jpg",
+    "src": "static/events/test/13.jpg"
+  },
+  "static/backgroundAssets/14.jpg": {
+    "file": "_app/immutable/assets/14.DH4jEhqI.jpg",
+    "src": "static/events/test/14.jpg"
+  },
+  "static/backgroundAssets/15.jpg": {
+    "file": "_app/immutable/assets/15.VTRTsp18.jpg",
+    "src": "static/events/test/15.jpg"
+  },
+  "static/backgroundAssets/16.jpg": {
+    "file": "_app/immutable/assets/16.C2wsf9O2.jpg",
+    "src": "static/events/test/16.jpg"
+  },
+  "static/backgroundAssets/18.jpg": {
+    "file": "_app/immutable/assets/18.rCzbzzor.jpg",
+    "src": "static/events/test/18.jpg"
+  },
+  "static/backgroundAssets/19.jpg": {
+    "file": "_app/immutable/assets/19.D8LjnyOB.jpg",
+    "src": "static/events/test/19.jpg"
+  },
+  "static/backgroundAssets/2.jpg": {
+    "file": "_app/immutable/assets/2.BjjptTqG.jpg",
+    "src": "static/events/test/2.jpg"
+  },
+  "static/backgroundAssets/3.jpg": {
+    "file": "_app/immutable/assets/3.Cg5C-Hdd.jpg",
+    "src": "static/events/test/3.jpg"
+  },
+  "static/backgroundAssets/WhatsApp Image 2024-07-04 at 16.04.12_710d6565.jpg": {
+    "file": "_app/immutable/assets/WhatsApp Image 2024-07-04 at 16.04.12_710d6565.Dta4k68K.jpg",
+    "src": "static/events/test/WhatsApp Image 2024-07-04 at 16.04.12_710d6565.jpg"
+  },
+  "static/backgroundAssets/WhatsApp Image 2024-07-04 at 16.04.12_7f47fb47.jpg": {
+    "file": "_app/immutable/assets/WhatsApp Image 2024-07-04 at 16.04.12_7f47fb47.xljAkgzc.jpg",
+    "src": "static/events/test/WhatsApp Image 2024-07-04 at 16.04.12_7f47fb47.jpg"
+  },
+  "static/events/test/1.jpg": {
+    "file": "_app/immutable/assets/1.5_k37vG8.jpg",
+    "src": "static/events/test/1.jpg"
+  },
+  "static/events/test/12.jpg": {
+    "file": "_app/immutable/assets/1.5_k37vG8.jpg",
+    "src": "static/events/test/1.jpg"
+  },
+  "static/events/test/13.jpg": {
+    "file": "_app/immutable/assets/13.BWMH3uSG.jpg",
+    "src": "static/events/test/13.jpg"
+  },
+  "static/events/test/14.jpg": {
+    "file": "_app/immutable/assets/14.DH4jEhqI.jpg",
+    "src": "static/events/test/14.jpg"
+  },
+  "static/events/test/15.jpg": {
+    "file": "_app/immutable/assets/15.VTRTsp18.jpg",
+    "src": "static/events/test/15.jpg"
+  },
+  "static/events/test/16.jpg": {
+    "file": "_app/immutable/assets/16.C2wsf9O2.jpg",
+    "src": "static/events/test/16.jpg"
+  },
+  "static/events/test/18.jpg": {
+    "file": "_app/immutable/assets/18.rCzbzzor.jpg",
+    "src": "static/events/test/18.jpg"
+  },
+  "static/events/test/19.jpg": {
+    "file": "_app/immutable/assets/19.D8LjnyOB.jpg",
+    "src": "static/events/test/19.jpg"
+  },
+  "static/events/test/2.jpg": {
+    "file": "_app/immutable/assets/2.BjjptTqG.jpg",
+    "src": "static/events/test/2.jpg"
+  },
+  "static/events/test/3.jpg": {
+    "file": "_app/immutable/assets/3.Cg5C-Hdd.jpg",
+    "src": "static/events/test/3.jpg"
+  },
+  "static/events/test/WhatsApp Image 2024-07-04 at 16.04.12_710d6565.jpg": {
+    "file": "_app/immutable/assets/WhatsApp Image 2024-07-04 at 16.04.12_710d6565.Dta4k68K.jpg",
+    "src": "static/events/test/WhatsApp Image 2024-07-04 at 16.04.12_710d6565.jpg"
+  },
+  "static/events/test/WhatsApp Image 2024-07-04 at 16.04.12_7f47fb47.jpg": {
+    "file": "_app/immutable/assets/WhatsApp Image 2024-07-04 at 16.04.12_7f47fb47.xljAkgzc.jpg",
+    "src": "static/events/test/WhatsApp Image 2024-07-04 at 16.04.12_7f47fb47.jpg"
+  },
+  "static/events/test/banner.png": {
+    "file": "_app/immutable/assets/banner.BPcTboa5.png",
+    "src": "static/events/test/banner.png"
+  }
+}
