@@ -35,7 +35,7 @@ export default defineConfig(async () => ({
     optimizeDeps: { exclude: ["fsevents"] },
   },
   build: {
-    outDir: 'dist'  // Ensure this points to the correct directory
+    outDir: 'public'  // Ensure this points to the correct directory
   },
   preview: {
     port: 4173,
