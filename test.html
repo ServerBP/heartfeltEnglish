@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Static QR — heartfeltenglish.org</title>
+  <style>
+    body { font-family: system-ui, Arial; display:flex; gap:20px; padding:24px; }
+    #panel { max-width:380px; }
+    #qrcode img { width: 256px; height: 256px; }
+    button { margin-top: 12px; padding:8px 12px; }
+    textarea { width:100%; height:70px; margin-top:12px; font-family:monospace; }
+  </style>
+</head>
+<body>
+  <div id="panel">
+    <h1>QR for heartfeltenglish.org</h1>
+    <div id="qrcode"></div>
+    <button id="downloadBtn">Download PNG</button>
+    <textarea id="dataUri" readonly></textarea>
+  </div>
+
+  <!-- QRCode.js (davidshimjs) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    (function(){
+      const url = 'https://heartfeltenglish.org';
+      // create QR
+      const qrEl = document.getElementById('qrcode');
+      qrEl.innerHTML = '';
+      const qr = new QRCode(qrEl, {
+        text: url,
+        width: 256,
+        height: 256,
+        correctLevel: QRCode.CorrectLevel.H
+      });
+
+      // wait a tick for library to render (<img> or <canvas>)
+      setTimeout(() => {
+        // find generated <img> or <canvas>
+        const img = qrEl.querySelector('img');
+        const canvas = qrEl.querySelector('canvas');
+
+        // prepare download
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+          if (img) {
+            // image is already a data URL in src
+            const a = document.createElement('a');
+            a.href = img.src;
+            a.download = 'heartfeltenglish_qr.png';
+            a.click();
+          } else if (canvas) {
+            const dataUrl = canvas.toDataURL('image/png');
+            const a = document.createElement('a');
+            a.href = dataUrl;
+            a.download = 'heartfeltenglish_qr.png';
+            a.click();
+          } else {
+            alert('QR not found yet — try reloading.');
+          }
+        });
+
+        // fill textarea with data URI for embedding
+        let dataUri = '';
+        if (img) dataUri = img.src;
+        else if (canvas) dataUri = canvas.toDataURL('image/png');
+        document.getElementById('dataUri').value = dataUri;
+      }, 100);
+    })();
+  </script>
+</body>
+</html>
