@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import azure from 'svelte-adapter-azure-swa';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -7,9 +7,12 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 
-	adapter: adapter({
-      fallback: 'index.html' // important for SPA routing
-    })
+	kit: {
+		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
+		adapter: azure()
+	}
 };
 
 export default config;
