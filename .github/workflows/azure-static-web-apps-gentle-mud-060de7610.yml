@@ -31,6 +31,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "./heartfeltv3" # App source code path
           output_location: "build/static" # Built app content directory - optional
+          api_location: "./heartfeltv3/build/server"
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
