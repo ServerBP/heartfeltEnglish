@@ -12,7 +12,7 @@
 </script>
 
 <div class="app">
-	<nav class="navbar">
+	<!-- <nav class="navbar">
 		<div class="nav-container">
 			<div class="nav-logo">
 				<img src="/logos/whiteLogo.png" alt="HeartfeltEnglish Logo" class="logo" />
@@ -66,13 +66,13 @@
 					onclick={() => (mobileMenuOpen = false)}>Donate</a>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
 
 	<main class="main-content">
 		{@render children()}
 	</main>
 
-	<footer class="footer">
+	<!-- <footer class="footer">
 		<div class="footer-container">
 			<div class="footer-content">
 				<div class="footer-section">
@@ -135,7 +135,7 @@
 				</p>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 </div>
 
 <style>
