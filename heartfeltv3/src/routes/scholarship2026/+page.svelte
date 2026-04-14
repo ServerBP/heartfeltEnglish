@@ -13,38 +13,37 @@
 	const NAVBAR_OFFSET = "7rem";
 
 	const facebookUrl = "https://www.facebook.com/profile.php?id=100089924056817";
+	const facebookPageUrl = "https://www.facebook.com/heartfelt.english";
 	const instagramUrl = "https://www.instagram.com/heartfelt.english";
 	const facebookEmbedUrl =
 		"https://www.facebook.com/plugins/page.php?href=" +
-		encodeURIComponent(facebookUrl) +
+		encodeURIComponent(facebookPageUrl) +
 		"&tabs=timeline&width=500&height=640&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true";
 	const instagramEmbedUrl = "https://www.instagram.com/heartfelt.english/embed/";
 
 	const participant = {
 		name: {
-			en: "Student to be announced",
-			hu: "A diak neve hamarosan",
+			en: "Student to be announced on: 31 May 2026",
+			hu: "Lorem ipsum dolor sit amet.",
 		},
 		role: {
 			en: "Scholarship participant (TBD)",
-			hu: "Osztondij resztvevo (hamarosan)",
+			hu: "Lorem ipsum dolor sit amet.",
 		},
 		location: {
 			en: "Hungary",
-			hu: "Magyarorszag",
+			hu: "Lorem ipsum",
 		},
 		bio: {
 			en: "The final scholarship student has not been selected yet. This profile section will be updated once the participant is confirmed, including photo, short bio, and programme goals.",
-			hu: "A vegleges osztondijas diak kivalasztasa meg folyamatban van. Ez a profil szakasz frissulni fog a vegleges resztvevo fotojaval, rovid bemutatkozasaval es programceljaival.",
+			hu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		},
-		image: "https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=380&q=80",
+		image: "/assets/scholarshipHeart.png",
 	};
 
 	const programmeDates = {
-		start: "June 2026 (exact date to be confirmed)",
-		end: "August 2026 (exact date to be confirmed)",
-		startHu: "2026 junius (a pontos datum egyeztetes alatt)",
-		endHu: "2026 augusztus (a pontos datum egyeztetes alatt)",
+		en: "Summer 2026 (exact dates to be confirmed)",
+		hu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 	};
 
 	const copy = {
@@ -56,45 +55,38 @@
 			languageLabel: "Language",
 			programmeTitle: "Programme Overview",
 			programmeBody:
-				"HeartfeltEnglish is a Hungarian-registered charity founded by Agota Szekely and Orsolya Szucs. Since 2021, our volunteers have provided free online English lessons for children in care homes, along with summer camps in Romania and scholarship opportunities in the UK.",
+				"Heartfelt English is a Hungarian-registered charity founded by Agota Szekely. Since 2021, our volunteers have provided free online English lessons for children in care homes, along with summer camps and scholarship opportunities in the UK.",
 			programmeBody2:
 				"This scholarship programme ran in previous years and continues in 2026 as part of our mission to create equal opportunities through education, mentorship, and meaningful international experiences.",
 			dateLabel: "Programme dates",
-			startLabel: "Start",
-			endLabel: "End",
 			timelineTitle: "2026 Timeline",
-			timelineSummaryTitle: "Programme focus",
-			timelineSummaryBody:
-				"Selection, preparation, travel, and reflection. Each phase is tracked here so supporters can follow progress clearly.",
-			socialTitle: "Follow This Year's Updates",
+			timelineSummaryTitle: "FOLLOW",
+			timelineSummaryBody: "Track each stage of this journey here.",
+			socialTitle: "Follow This Year's Daily Updates",
 			socialBody:
-				"Use the programme links and embedded feeds below. For now, they point to the main HeartfeltEnglish Facebook and Instagram accounts.",
+				"Use the programme links and embedded feeds below. For now, they point to the main Heartfelt English Facebook and Instagram accounts.",
 			facebookButton: "Facebook Programme Page",
 			instagramButton: "Instagram Programme Page",
 		},
 		hu: {
-			title: "Osztondij Program 2026",
-			subtitle:
-				"Fokuszalt oldal az idei utrol: diak, idovonal, programreszletek es elo frissitesek.",
-			studentSectionTitle: "Ismerd meg a diakot",
-			languageLabel: "Nyelv",
-			programmeTitle: "Program attekintes",
+			title: "Lorem ipsum dolor sit amet",
+			subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			studentSectionTitle: "Lorem ipsum",
+			languageLabel: "Lorem ipsum",
+			programmeTitle: "Lorem ipsum",
 			programmeBody:
-				"A HeartfeltEnglish egy magyar bejegyzesu jotekonysagi szervezet, amelyet Agota Szekely es Orsolya Szucs alapitott. 2021 ota onkenteseink ingyenes online angolorakat tartanak gyermekotthonokban elo gyerekeknek, valamint romaniai nyari taborokat es brit osztondijlehetosegeket szerveznek.",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			programmeBody2:
-				"Az osztondijprogram korabbi evekben is megvalosult, es 2026-ban is folytatodik kuldetesunk reszekent: eselyteremtes oktatassal, mentoralassal es ertekes nemzetkozi tapasztalatokkal.",
-			dateLabel: "Program idopontjai",
-			startLabel: "Kezdes",
-			endLabel: "Befejezes",
-			timelineTitle: "2026-os idovonal",
-			timelineSummaryTitle: "A program fokusza",
-			timelineSummaryBody:
-				"Kivalasztas, felkeszites, utazas es visszacsatolas. Minden szakaszt itt kovetunk, hogy a tamogatok atlathatoan lassak a haladast.",
-			socialTitle: "Kovesd az idei frissiteseket",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			dateLabel: "Lorem ipsum",
+			timelineTitle: "Lorem ipsum",
+			timelineSummaryTitle: "Lorem ipsum",
+			timelineSummaryBody: "Lorem ipsum dolor sit amet.",
+			socialTitle: "Lorem ipsum dolor sit amet",
 			socialBody:
-				"Hasznald az alabbi programlinkeket es beagyazott feedeket. Jelenleg a fo HeartfeltEnglish Facebook es Instagram fiokra mutatnak.",
-			facebookButton: "Facebook Program Oldal",
-			instagramButton: "Instagram Program Oldal",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			facebookButton: "Lorem ipsum",
+			instagramButton: "Lorem ipsum",
 		},
 	} satisfies Record<Language, Record<string, string>>;
 
@@ -103,11 +95,11 @@
 			key: "selection",
 			title: {
 				en: "Student selection in progress",
-				hu: "A diak kivalasztasa folyamatban",
+				hu: "Lorem ipsum dolor sit amet",
 			},
 			description: {
 				en: "The final scholarship participant is being selected with the mentoring team.",
-				hu: "A vegleges osztondijas diak kivalasztasa jelenleg a mentor csapattal zajlik.",
+				hu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			},
 			isCurrent: true,
 		},
@@ -115,33 +107,33 @@
 			key: "prep",
 			title: {
 				en: "Preparation period",
-				hu: "Felkeszulesi idoszak",
+				hu: "Lorem ipsum dolor sit amet",
 			},
 			description: {
-				en: "English practice, orientation, and travel logistics are prepared.",
-				hu: "Angol gyakorlas, felkeszites es utazasi szervezes tortenik.",
+				en: "Orientation is offered by the Heartfelt Team and former scholarship winners (Iulia - 2024 and Viola - 2025). Travel logistics are prepared.",
+				hu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			},
 		},
 		{
 			key: "uk",
 			title: {
 				en: "UK programme",
-				hu: "Egyesult kiralysagbeli program",
+				hu: "Lorem ipsum dolor sit amet",
 			},
 			description: {
-				en: "The selected student attends the scholarship programme in the UK.",
-				hu: "A kivalasztott diak reszt vesz az osztondijas programban az Egyesult Kiralysagban.",
+				en: "The selected student attends an intensive English language programme (25 hours/week) at Concorde International in Canterbury, UK.",
+				hu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			},
 		},
 		{
 			key: "return",
 			title: {
 				en: "Return and outcomes",
-				hu: "Hazateres es eredmenyek",
+				hu: "Lorem ipsum dolor sit amet",
 			},
 			description: {
 				en: "We share reflections, photos, and learning outcomes from the journey.",
-				hu: "Megosztjuk az elmenyeket, fotokat es tanulasi eredmenyeket.",
+				hu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			},
 		},
 	];
@@ -218,8 +210,7 @@
 			</article>
 			<aside class="dates">
 				<h3>{copy[lang].dateLabel}</h3>
-				<p><strong>{copy[lang].startLabel}:</strong> {lang === "en" ? programmeDates.start : programmeDates.startHu}</p>
-				<p><strong>{copy[lang].endLabel}:</strong> {lang === "en" ? programmeDates.end : programmeDates.endHu}</p>
+				<p>{lang === "en" ? programmeDates.en : programmeDates.hu}</p>
 			</aside>
 		</div>
 	</section>
@@ -242,14 +233,16 @@
 			<div class="timeline-summary" style={`--sticky-top: ${NAVBAR_OFFSET}`}>
 				<h4>{copy[lang].timelineSummaryTitle}</h4>
 				<p class="normal">{copy[lang].timelineSummaryBody}</p>
+				<img src="/assets/scholarshipHeart.png" alt="Heartfelt scholarship heart" class="summary-heart" />
 			</div>
 		</div>
 	</section>
 
 	<section class="social reveal" style="--delay: 280ms">
-		<div class="social-head">
+		<div class="social-head social-highlight">
 			<h3>{copy[lang].socialTitle}</h3>
 			<p class="normal">{copy[lang].socialBody}</p>
+			<!-- <img src="/assets/scholarshipHeart.png" alt="Heartfelt scholarship heart" class="social-heart" /> -->
 			<div class="social-buttons">
 				<a href={facebookUrl} target="_blank" rel="noopener noreferrer" class="social-btn">
 					<i class="pi pi-facebook"></i>
@@ -282,8 +275,9 @@
 <style>
 	.page {
 		background:
-			radial-gradient(circle at 0% 0%, rgba(220, 38, 38, 0.08), transparent 42%),
-			radial-gradient(circle at 100% 100%, rgba(234, 179, 8, 0.08), transparent 38%),
+			radial-gradient(circle at 12% 10%, rgba(245, 189, 13, 0.18), transparent 45%),
+			radial-gradient(circle at 88% 22%, rgba(28, 160, 181, 0.14), transparent 42%),
+			radial-gradient(circle at 72% 88%, rgba(66, 201, 221, 0.16), transparent 40%),
 			#fff;
 		color: var(--color-text);
 	}
@@ -387,7 +381,7 @@
 	.student-image {
 		width: 136px;
 		height: 136px;
-		border-radius: 50%;
+		border-radius: 1rem;
 		object-fit: cover;
 		border: 3px solid #fff;
 		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -420,11 +414,6 @@
 		line-height: 1.65;
 	}
 
-	.programme-intro p {
-		margin: 0.3rem 0 0;
-		color: var(--color-text-light);
-	}
-
 	.details-grid {
 		display: grid;
 		grid-template-columns: 1.35fr 0.9fr;
@@ -452,7 +441,7 @@
 	}
 
 	.programme-text p + p,
-	.dates p + p {
+	.dates p {
 		margin-top: 0.7rem;
 	}
 
@@ -506,6 +495,15 @@
 
 	.timeline-summary h4 {
 		margin: 0 0 0.45rem;
+		font-size: 1.35rem;
+		letter-spacing: 0.03em;
+	}
+
+	.summary-heart {
+		width: 140px;
+		height: auto;
+		margin-top: 0.8rem;
+		display: block;
 	}
 
 	.social {
@@ -515,6 +513,18 @@
 	.social-head {
 		padding-top: 0.3rem;
 		border-top: 1px solid rgba(15, 23, 42, 0.12);
+	}
+
+	.social-highlight {
+		background: rgba(245, 189, 13, 0.2);
+		border-radius: 14px;
+		padding: 1rem;
+	}
+
+	.social-heart {
+		width: 92px;
+		height: auto;
+		margin-top: 0.8rem;
 	}
 
 	.social-buttons {
@@ -557,7 +567,7 @@
 
 	@media (max-width: 980px) {
 		.details-grid,
-		timeline-grid,
+		.timeline-grid,
 		.feeds {
 			grid-template-columns: 1fr;
 		}
@@ -570,7 +580,7 @@
 	@media (max-width: 640px) {
 		.hero,
 		.details,
-		timeline-section,
+		.timeline-section,
 		.social {
 			padding: 1.5rem 1rem;
 		}
