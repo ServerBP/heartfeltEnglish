@@ -42,8 +42,8 @@
 						>Home</a>
 				</li>
 				<li>
-					<a href="/about" onclick={() => (mobileMenuOpen = false)}
-						>About Us</a>
+					<a href="/scholarship2026" onclick={() => (mobileMenuOpen = false)}
+						>Scholarship 2026</a>
 				</li>
 			</ul>
 			<div class="nav-right" class:mobile-open={mobileMenuOpen}>
@@ -71,9 +71,9 @@
 					</a>
 				</div>
 				<a
-					href="/donate"
+					href="/scholarship2026"
 					class="donate-nav-btn"
-					onclick={() => (mobileMenuOpen = false)}>Donate</a>
+					onclick={() => (mobileMenuOpen = false)}>Scholarship 2026</a>
 			</div>
 		</div>
 	</nav>
