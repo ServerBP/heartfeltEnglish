@@ -4,7 +4,7 @@
 
 	let { children } = $props();
 
-	const routesWithoutLayout = ["/"];
+	const routesWithoutLayout = ["/", "/scholarship2026"];
 
 	let currentYear = new Date().getFullYear();
 	let mobileMenuOpen = $state(false);
