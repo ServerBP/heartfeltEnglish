@@ -188,7 +188,7 @@
 	.hero {
 		position: relative;
 		min-height: 100vh;
-		background-image: url("/backgroundAssets/19.jpg");
+		/* background-image: url("/backgroundAssets/19.jpg"); */
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
